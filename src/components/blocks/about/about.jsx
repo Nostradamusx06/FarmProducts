@@ -2,7 +2,6 @@ import React from "react";
 import Title, { TitleSize } from "/src/components/ui/title/title";
 import { Text, StyledAbout } from "./styles";
 
-// Раздел о магазине фермерских продуктов
 function About() {
   return (
     <StyledAbout>

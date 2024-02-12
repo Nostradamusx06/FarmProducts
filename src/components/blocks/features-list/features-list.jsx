@@ -3,9 +3,8 @@ import FeatureCard from "/src/components/ui/feature-card/feature-card";
 import { Ul, Li } from "/src/components/styled";
 import { Features, StyledButton, StyledTitle } from "./styles";
 
-// список преимуществ
 function FeaturesList({
-  features // преимущества - массив объектов с id, title, owner, isNegative, image, about
+  features
 }) {
   return features && features.length ? (
     <Features>

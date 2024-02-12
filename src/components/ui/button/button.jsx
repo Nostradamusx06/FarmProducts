@@ -2,12 +2,12 @@ import React from "react";
 import { StyledButton } from "./styles";
 
 function Button({
-  children, // дочерний элемент, отображаемый в кнопке
-  link, // ссылка
-  maxWidth, // делает кнопку на 100% родителя
-  className, // класс
-  onClick, // событие по клику
-  ...props // остальные переданные пропсы
+  children, 
+  link, 
+  maxWidth, 
+  className,
+  onClick, 
+  ...props 
 }) {
   return (
     <StyledButton

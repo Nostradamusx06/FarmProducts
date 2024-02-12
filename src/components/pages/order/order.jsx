@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Panel from "/src/components/ui/panel/panel";
 import Title, { TitleSize } from "/src/components/ui/title/title";
-import ProductCart from "/src/components/ui/product-cart/product-cart";
+import ProductCard from "/src/components/ui/product-card/product-card";
 import Button from "/src/components/ui/button/button";
 import CheckboxList from "/src/components/ui/checkbox-list/checkbox-list";
 
@@ -19,17 +19,14 @@ import SwiperCore, { Pagination, Mousewheel, Scrollbar } from "swiper/core";
 import "swiper/swiper-bundle.min.css";
 SwiperCore.use([Mousewheel, Pagination, Scrollbar]);
 
-// Оформление заказа
 function Order({
-  products // список продуктов
+  products 
 }) {
   const [swiperRef, setSwiperRef] = useState(null);
   const [selectProductIds, setSelectProductIds] = useState([]);
-  //id в продукты
   const selectProducts = selectProductIds.map((id) =>
     products.find((product) => product.id === id)
   );
-  //цена покупки
   const fullPrice = selectProducts.reduce(
     (sum, product) => (sum += product.price),
     0
@@ -101,7 +98,7 @@ function Order({
       >
         {products.map((product) => (
           <SwiperSlide key={product.id}>
-            <ProductCart product={product} />
+            <ProductCard product={product} />
           </SwiperSlide>
         ))}
       </ProductSwiper>
