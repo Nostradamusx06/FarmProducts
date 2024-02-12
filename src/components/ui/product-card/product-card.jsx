@@ -5,7 +5,7 @@ import { ProductImage, ProductTitle, Price, ContentWrapper } from "./styles";
 import Tabs from "/src/components/ui/tabs/tabs";
 import OptionsList from "/src/components/ui/options-list/options-list";
 
-function ProductCart({ product }) {
+function ProductCard({ product }) {
   const tabsList = [
     {
       title: "Oписание",
@@ -36,4 +36,4 @@ function ProductCart({ product }) {
   );
 }
 
-export default ProductCart;
+export default ProductCard;
