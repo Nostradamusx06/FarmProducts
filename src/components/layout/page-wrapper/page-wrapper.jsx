@@ -10,7 +10,7 @@ function PageWrapper({ children, features, products }) {
     <>
       <Header />
       <Main>
-        <Order products={products} />
+        <MainPage features={features} />
       </Main>
       <Footer />
     </>
