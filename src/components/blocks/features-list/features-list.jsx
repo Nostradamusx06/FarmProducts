@@ -16,7 +16,7 @@ function FeaturesList({
           </Li>
         ))}
       </Ul>
-      <StyledButton link="/buy">Купить</StyledButton>
+      <StyledButton link="/order">Купить</StyledButton>
     </Features>
   ) : null;
 }
